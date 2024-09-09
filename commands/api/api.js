@@ -19,13 +19,14 @@ module.exports = {
 		const dictResult = await request(`https://www.gtales.top/api/raids?boss=${boss}&element=${element}`);
 		const list = await dictResult.body.json();
 
+		try {
 		const answer = list[0];
 
 		const embed = new EmbedBuilder()
 			.setColor(0xEFFF00)
-			.addFields({ name: 'Heroes', value: `${answer.heroes}` }, { name: 'Cartas', value: `${answer.cards}` }, { name: 'Reliquia', value: `${answer.relic}` });
+			.addFields({ name: 'Heroes', value: `${answer.heroes}` }, { name: 'Cartas', value: `${answer.cards}` }, { name: 'Reliquia', value: `${answer.relic}` }, { name: 'Cadena', value: `${JSON.stringify(answer.chains.P1)}` });
 
-		try {
+		
 			await interaction.editReply({ embeds: [embed] });
 		} catch {
 			return interaction.editReply(`No results found for **${element}** and **${boss}**.`);
