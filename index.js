@@ -60,5 +60,11 @@ client.once(Events.ClientReady, readyClient => {
 	console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 });
 
+client.on('clickButton', (button) => {
+	if (button.id === 'next') {
+		button.reply.edit(embed);
+	}
+ })
+
 // Log in to Discord with your client's token
 client.login(token);
