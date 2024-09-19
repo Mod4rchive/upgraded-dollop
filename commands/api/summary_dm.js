@@ -23,7 +23,6 @@ module.exports = {
 					{ name: 'Terrorista', value: 'terrorist' },
 					{ name: 'Slime', value: 'slime' },
 					{ name: 'Marina', value: 'marina' },
-					{ name: 'Garam', value: 'marina' },
 					{ name: 'Duncan', value: 'duncan' },
 					{ name: 'Minotauro', value: 'minotaur' },
 					{ name: 'Sombra', value: 'shadow' },

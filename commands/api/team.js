@@ -22,10 +22,10 @@ module.exports = {
 					{ name: 'Director', value: 'director' },
 					{ name: 'Terrorista', value: 'terrorist' },
 					{ name: 'Slime', value: 'slime' },
-					{ name: 'Marina', value: 'panda' },
-					{ name: 'Garam', value: 'marina' },
+					{ name: 'Panda', value: 'panda' },
+					{ name: 'Marina', value: 'marina' },
 					{ name: 'Duncan', value: 'duncan' },
-					{ name: 'Minotauro', value: 'garam' },
+					{ name: 'Minotauro', value: 'minotaur' },
 					{ name: 'Sombra', value: 'shadow' },
 					{ name: 'Viper', value: 'viper' }))
 
