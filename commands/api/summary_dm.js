@@ -75,14 +75,20 @@ module.exports = {
 					result += "\t ***Aviso***"
 				}
 
-				result += "\n```";
+				result += "\n";
 				//console.log(team.chains.P1)
-				for (chain in team.chains.P1) {
-					result += "* " + team.chains.P1[chain] + "\n"
+        if (team.chains.P1){
+          result += "```";
+          for (chain in team.chains.P1) {
+					result += "* " + team.chains.P1[chain] + "\n";
 					//console.log(result);
+          }
+          result += "```";
 				}
-				result += "```\n";
-			}
+				result += "\n";
+        }
+				
+			
 
 			//get name tipifyed
 			var boss_name = "";
@@ -125,6 +131,8 @@ module.exports = {
 					boss_name = 'Viper'; break;
 				case 'panda':
 					boss_name = 'Panda'; break;
+        case 'gast':
+					boss_name = 'Gast'; break;
 			}
 
 			var element_name = "";

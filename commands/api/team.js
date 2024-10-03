@@ -98,6 +98,8 @@ module.exports = {
 				boss_name = 'Viper'; break;
 			case 'panda':
 				boss_name = 'Panda'; break;
+      case 'gast':
+				boss_name = 'Gast'; break;
 		}
 
 		var element_name = "";
