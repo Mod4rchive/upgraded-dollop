@@ -27,7 +27,8 @@ module.exports = {
 					{ name: 'Minotauro', value: 'minotaur' },
 					{ name: 'Sombra', value: 'shadow' },
 					{ name: 'Viper', value: 'viper' },
-					{ name: 'Panda', value: 'panda' },))
+					{ name: 'Panda', value: 'panda' },
+          { name: 'Gast', value: 'gast' },))
 
 		.addStringOption(option =>
 			option.setName('element')
